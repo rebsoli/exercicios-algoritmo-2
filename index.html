@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a14430386d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Exercícios 2</title>
+  </head>
+  <body>
+    <header>
+      <h1>Exercícios 2</h1>
+      <h2>Algoritmos e Lógica de Programação</h2>
+    </header>
+    <main>
+      <div class="grid-button">
+        <button id="limpar" onclick="limparTudo()">
+          <i class="fa-solid fa-broom"></i>
+        </button>
+      </div>
+      <div class="projeto">
+        <h3 class="subtitle">Quatro operações</h3>
+        <p class="description">
+          Faça um algoritmo que receba dois números (variáveis A e B) e efetua
+          as operações de adição, subtração, multiplicação e divisão de A por B
+          apresentando ao final os quatro resultados obtidos.
+        </p>
+        <div class="grid-container">
+          <input id="valor1" type="text" />
+          <input id="valor2" type="text" />
+        </div>
+        <button onclick="calcular()">Calcular</button>
+        <div class="resultado">
+          <p id="operacoes"></p>
+          <p id="divisao"></p>
+        </div>
+      </div>
+      <hr />
+      <div class="projeto">
+        <h3>Quadrado de um número</h3>
+        <p class="description">
+          Efetuar a leitura de um número inteiro e apresentar o resultado do
+          quadrado deste número, ou seja, multiplicar o número por ele mesmo.
+        </p>
+        <div class="grid-container">
+          <input type="text" id="quadrado" />
+        </div>
+        <button onclick="quadrado()">Calcular</button>
+        <p class="resultado" id="resultado_quadrado"></p>
+      </div>
+      <hr />
+      <div class="projeto">
+        <h3>Número maior e menor</h3>
+        <p class="description">Mostra se um número é maior, menor ou igual</p>
+        <div class="grid-container">
+          <input type="text" id="num1" />
+          <input type="text" id="num2" />
+        </div>
+        <button onclick="maiorOuMenor()">Calcular</button>
+        <p class="resultado" id="maior_ou_menor"></p>
+      </div>
+      <hr />
+      <div class="projeto">
+        <h3>Par ou Ímpar</h3>
+        <p class="description">
+          Faça um algoritmo para ler um número inteiro e exibir na tela a
+          mensagem 'Par' se ele for um número par, ou 'Ímpar' se ele for um
+          número ímpar.
+        </p>
+        <div class="grid-container">
+          <input type="text" id="num" />
+        </div>
+        <button onclick="parOuImpar()">Resultado</button>
+        <p class="resultado" id="par_ou_impar"></p>
+      </div>
+      <hr />
+      <div class="projeto">
+        <h3>Salário líquido de um professor</h3>
+        <p class="description">
+          Elaborar um algoritmo que calcule o salário líquido de um professor.
+          Para fazer este algoritmo devem ser informados os dados: valor da hora
+          aula, número de aulas dadas no mês e percentual de desconto do INSS.
+          Em primeiro lugar, deve-se estabelecer qual será o seu salário bruto
+          para efetuar o desconto e ter o valor do salário líquido.
+        </p>
+        <div class="grid-container">
+          <label for="hora_aula">Valor da hora aula</label>
+          <input placeholder="R$45.00" type="text" id="hora_aula" /><br />
+          <label for="n_aulas_dadas">Nº de aulas dadas no mês</label>
+          <input
+            placeholder="30, 60, 80..."
+            type="text"
+            id="n_aulas_dadas"
+          /><br />
+          <label for="desconto">Desconto INSS (em %)</label>
+          <input placeholder="5, 10, 20..." type="text" id="desconto" />
+        </div>
+        <button onclick="salarioLiquido()">Calcular</button>
+        <p class="resultado" id="salario_liquido"></p>
+      </div>
+    </main>
+    <footer>
+      <span>Sarah Rebeca - SI - 1º semestre</span>
+      <div class="socials">
+        <span>Onde me encontrar:</span><br />
+        <a
+          href="https://www.linkedin.com/in/sarahrebeca/"
+          target="_blank"
+          rel="link"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://www.github.com/rebsoli/" target="_blank" rel="github"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
