@@ -13,13 +13,8 @@ header {
   text-shadow: 1px 1px 15px #000;
   text-align: center;
   padding: 1.8em;
-  animation-name: cor;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  -web-kit-animation-name: cor;
-  -web-kit-animation-duration: 5s;
-  -web-kit-animation-iteration-count: infinite;
 }
+
 .projeto {
   padding: 1.7em;
   display: grid;
