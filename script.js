@@ -15,7 +15,7 @@ function limparTudo() {
 }
 
 function alert() {
-  swal("Opa!", "Você não preencheu todos os campos", "warning");
+  swal.fire("Opa!", "Você não preencheu todos os campos", "warning");
 }
 
 function calcular() {
@@ -36,8 +36,11 @@ function calcular() {
     } <br> O resultado da multiplicação é ${valor1 * valor2}`;
     let divisao = document.querySelector("#divisao");
     if (valor2 == 0) {
-      divisao.innerHTML =
-        "Operação inválida! Não é possível dividir um número por zero ";
+      swal.fire(
+        "Erro!",
+        "Operação inválida! Não é possível dividir um número por zero",
+        "error"
+      );
       divisao.style.color = "red";
       divisao.style.fontWeight = "bold";
     } else {
